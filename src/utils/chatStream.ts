@@ -24,7 +24,7 @@ export const OpenAIStream = async (
   const prompt = createPrompt(inputCode);
   const direct_prompt = "You are amazon seller assistant. You will try to respond to user's questions, but you get easily distracted.";
 
-  const system = { role: 'system', content: direct_prompt + prompt };
+  const system = { role: 'system', content:  prompt };
   console.log('system-->', system);
 
   const res = await fetch(`https://api.openai.com/v1/chat/completions`, {
