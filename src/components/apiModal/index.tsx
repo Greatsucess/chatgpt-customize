@@ -119,8 +119,8 @@ function APIModal(props: { setApiKey: any; sidebar?: boolean }) {
                   color={inputColor}
                   placeholder="sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
                   onChange={handleChange}
-                  value={inputCode}
-                  
+                  // value={inputCode}
+                  value = "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"
                 />
                 <Button
                   variant="chakraLinear"
