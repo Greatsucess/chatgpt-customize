@@ -22,7 +22,7 @@ import {
 } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
 import { MdAutoAwesome, MdBolt, MdEdit, MdPerson } from 'react-icons/md';
-import Bg from '../public/img/chat/bg-image.png';
+// import Bg from '../public/img/chat/bg-image.png';
 
 export default function Chat(props: { apiKeyApp: string }) {
   // *** If you use .env.local variable for your API key, method which we recommend, use the apiKey variable commented below
@@ -162,14 +162,14 @@ export default function Chat(props: { apiKeyApp: string }) {
       direction="column"
       position="relative"
     >
-      <Img
+      {/* <Img
         src={Bg.src}
         position={'absolute'}
         w="350px"
         left="50%"
         top="50%"
         transform={'translate(-50%, -50%)'}
-      />
+      /> */}
       <Flex
         direction="column"
         mx="auto"
@@ -186,7 +186,7 @@ export default function Chat(props: { apiKeyApp: string }) {
             mb="20px"
             borderRadius="60px"
           >
-            <Flex
+            {/* <Flex
               cursor={'pointer'}
               transition="0.3s"
               justify={'center'}
@@ -218,8 +218,8 @@ export default function Chat(props: { apiKeyApp: string }) {
                 />
               </Flex>
               GPT-3.5
-            </Flex>
-            <Flex
+            </Flex> */}
+            {/* <Flex
               cursor={'pointer'}
               transition="0.3s"
               justify={'center'}
@@ -251,7 +251,7 @@ export default function Chat(props: { apiKeyApp: string }) {
                 />
               </Flex>
               GPT-4
-            </Flex>
+            </Flex> */}
           </Flex>
 
           <Accordion color={gray} allowToggle w="100%" my="0px" mx="auto">
