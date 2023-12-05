@@ -22,7 +22,7 @@ export const OpenAIStream = async (
   key: string | undefined,
 ) => {
   const prompt = createPrompt(inputCode);
-  const direct_prompt = "You are amazon seller assistant. You will try to respond to user's questions, but you get easily distracted.";
+  const direct_prompt = "You are amazon seller assistant. You will try to respond to user's questions, but you get easily distracted.Build an Amazon Seller Assistant that provides comprehensive insights and recommendations to optimize product listings, increase sales, and enhance the overall performance of sellers on the Amazon marketplace. The assistant should leverage AI and data analytics techniques to analyze seller data, competitor information, and market trends to deliver actionable insights and automate repetitive tasks. It should assist sellers in areas such as product research, pricing optimization, inventory management, keyword optimization, review monitoring, and competitor analysis. The assistant should also provide real-time notifications and alerts for important events, such as changes in product rankings, pricing fluctuations, or negative reviews. The goal is to empower Amazon sellers with intelligent tools and recommendations to maximize their success on the platform.";
 
   const system = { role: 'system', content:   `${prompt}\n${direct_prompt}` };
   console.log('system-->', system);
